@@ -1,0 +1,193 @@
+:root{
+    --pink:lightpink;
+    --blue:lightblue;
+    --purple:purple;
+    --green:lightgreen;
+    --light:white;
+    --dark:black;
+    --red:red;
+}
+
+.toolbox {
+
+    display: flex;
+    background-color: black;
+    height: 5rem;
+    color: white;
+    align-items: center;
+
+}
+
+.toolbox-priority{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 70%;
+    margin-left: 5rem;
+    background-color: #393c3f;
+    
+}
+
+
+.color{
+    height: 2rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+
+.pink{
+    background-color: var(--pink);
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.green{
+    background-color: var(--green);
+}
+.light{
+    background-color: var(--light);
+}
+
+.red {
+    color: var(--red);
+}
+
+.action-btn {
+    width: 10rem;
+    height: 70%;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light);
+    color: var(--dark)
+
+}
+
+.add-btn,.remove-btn{
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.heading_cont{
+    display: flex;
+    text-align: center;
+    padding: 3rem;
+}
+
+.heading_pending{
+    width: 70%;
+}
+
+.heading_finished{
+    width: 30%;
+}
+
+.container_wrapper{
+    display: flex;
+}
+
+.container{
+    min-height:800px;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+
+}
+
+.pending_cont{
+    width: 70%;
+    gap: 2rem;
+    border-right: 2px solid black;
+
+}
+
+.finished_cont{
+    width: 30%;
+}
+
+
+.ticket_cont{
+    height: 15rem;
+    width: 18rem;
+    background-color: greenyellow;
+    position: relative;
+}
+
+.ticket_color{
+    height: 10%;
+    /* background-color: var(--pink); */
+}
+
+.ticket_id{
+    padding-left: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.ticket_area{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.lock_unlock{
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.model_cont{
+
+    height: 50vh;
+    width: 50vw;    
+    position: fixed;
+    top:25vh;
+    left: 25vw;
+
+    /* display: flex; */
+    display: none;
+}
+
+.textarea_cont{
+
+    height: 100%;
+    width: 75%;
+    color: var(--dark);
+    font-size: 2rem;
+    resize: none;
+}
+
+.priority_color_cont{
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.priority_color{
+
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.active{
+    border:5px solid var(--light);
+}
